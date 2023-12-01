@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> product information <?title>
+</head>
+<body>
+  <h1> product information </h1>
+<table border = "1" align = "center">
+        <tr>
+    <th>Name </th>
+    <th>Brand</th>
+    <th>Price</th>
+    <th>Stock</th>
+</tr>
+<tr> 
+         <td>product</td>
+         <td>Brand</td>
+         <td>& 19.99 </td>
+         <td> 50 </td>
+   </tr>
+         <tr> product 2 </td>
+         <td> Brand B </td>
+         <td> &29.99 </td>
+         <td> 30 </td>
+
+</tr>
+</table>
+   <table Border = "1" align = "Center">
+         <tr>
+            <th>Company </th>
+           <th> model</th>
+            <th> price </th>
+
+</tr>
+<tr>
+      <td> Aple </td>
+      <td>I phone-14 </td>
+      <td> & .9999</td>
+ 
+</tr>
+</table>    
+   </body>
+   </html>
