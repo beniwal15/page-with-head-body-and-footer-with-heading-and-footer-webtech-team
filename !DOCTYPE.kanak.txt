@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Book Information </title>
+</head>
+<framset cots = "30%,70%">
+<frame src= "list.html"name="booklist"></form>
+<fram src = list2.html"name="bookInformationform"></form>
+
+</framset>
+</html>
