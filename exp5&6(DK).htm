@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>User Information</title>
+	<style>
+		body{
+			font-family:Arial,sans-serif;
+			margin:0;
+			padding:0;
+			background-image:
+			background-size:cover;
+		}
+		.container{
+			max-width:600px;
+			margin:100px auto;
+			background-color:@fff;
+			padding:50px;
+			border-radius:50px;
+		}
+		h2{
+			text-align:center;
+		}
+		label{
+			display:block;
+			margin-bottom:20px;
+		}
+		input[type="text"],
+		input[type="email"],
+		input[type="number"],
+		select{
+			width:80%;
+			padding:10px;
+			margin-bottom:10px;
+			border:1px outset;
+			border-radius:5px;
+		}
+		.btn{
+			background-color:blue;
+			color:white;
+			padding:10px 20px;
+			border:none;
+			border-radius:5px;
+			cursor:progress;
+		}
+	</style>
+	</head>
+	<body>
+		<div class="container">
+		<h2>User Information</h2>
+		<form action="#"method="post">
+			<label>Name:<input type="text"id="name"placeholder="Enter Name"required></label>
+			<label>Gender:</label>
+			<label>Male:<input type="radio"id="male"name="gender"value="male"required></label>
+			<label>Female:<input type="radio"id="female"name="gender"value="female"required></label>
+			<label>Mobile:<input type="number"id="mobile"name"mobile"required></label>
+			<label>Email:<input type="email"id="email"name"email"required></label>
+			<label>City:<input type="text"id="city"name"city"required></label>
+			<label>State:<input type="text"id="state"name"state"required></label>
+			<label>Country:<select id="country"name"country"required>
+				<option value="Bharat">India/Bharat</option>
+				<option value="USA">United states</option>
+				<option value="Canada">Canada</option>
+		</select></label>
+
+		<input type="submit"class="btn"value="submit">
+		</form>
+</div>
+</body>
+</html>
