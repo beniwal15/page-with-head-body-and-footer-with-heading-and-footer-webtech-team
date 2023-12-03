@@ -1,0 +1,59 @@
+<1doctype html>
+<html lang="en">
+<head>
+<meta charset="otf"-8">
+<meat name ="viewpost content="width=device width pritiat -scall=1.0">
+<titel> student setalls </titel>
+</head>
+<body>
+ <h1>student detalss </h1>
+<1----student detaws form---->
+<form id="student form">
+<label for="student number">student number;
+<label>
+<input type="text="id="sudent number"reguiral><br<>br>
+<label for="studentname"> name;</label>
+<input type="text"=id"=studentname"regwred><br><br>
+<label for="student ege"> age;</bber>
+<input type="number"id="student age" regrired><br><br>
+<label for="student aarts"><age;</label>
+<input type="number"id="student makes">makrks;</label>
+<input type =",number" id="student" requierd><br><br>
+<1---button to add a student--->
+<button type="button" onclick="add student()">add student</button>
+</form>
+<h2> student list ; </h2>
+<! list to display student detalls-->
+<41;id="student ist"><al>
+<script>
+" array to store atudent ob jects iet student=[];
+"function to add a student function add student()}
+"get input valuse form the form cornat student number =document.get elementtbyid
+("student number")value;
+const student name=document get element byid(" do cument get element byid("student makrs= documebnt getelement byid("student maks)value;
+"create astudent object const student={student number student num name student age student}
+"add the student object to the arrry student push (student);
+"display the updated list of student display student();
+"reset the form rest form();
+}
+"function to display the list of student function display student();
+const student list=documemt getelement("student);
+studentlist innerhtml="";
+student,for each cstudent,index)=>}
+"create a list item a for each student const listfem=docament create element("");
+listitem inner html=student & eindex tb;<br>
+{student student number}<br>
+name;&
+{student student name}<br>
+age;&
+{student student age}<br>
+maks;&
+{student student makes}<br>
+;
+student (ist appendchild (listitem);}
+"function to reset the form function reset form()}
+document getelement byid ("student form") reset();
+}
+</script>
+<body>
+</html>
