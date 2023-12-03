@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+ <titel> simple calculator </titel>
+<script>
+function calulale (){
+var num=1
+parsefloat cdocum ent.getelement byid ("num1").value);
+var num2=parsefoat codcam ent ,get elemntbyle ("num2").value);
+var operator=document,gete lement byid("operator")value;
+var resuie;
+swite coperator)}
+case "+";
+resuif=num1+num2;
+break;
+case"-";
+reso 1+ =num1-num2;
+break;
+case=*";
+resuit"num1*num2;
+break;
+case"/";
+if (num2!==0)}
+resoit=num1/num2;
+{
+ else}
+resuit="canmt divide by zero";
+{
+break;
+defaulf;
+result="invalid operator":
+}
+document,get element byid("resuit"),inner html="resule;"+ result;
+}
+</script>
+</head>
+<body>
+<h1> simple calcuator </h1>
+<form>
+<input type="number"id="num1" placeholder="enter number 1">
+<select id="operator">
+<optio value="+"</option>
+<option value ="+">+</option>
+<option value ="+">-</option>
+<option value="*">*</option>
+<option value="/"></option>
+</select>
+<input type="number"id="num2"placehoider">="enter number2">
+<button type="button" onclick="calcutate()"> calculate</button>
+</form>
+<p id ="resule"> result;</p>
+</body>
+</html>
