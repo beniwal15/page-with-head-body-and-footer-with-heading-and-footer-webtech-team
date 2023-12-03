@@ -1,0 +1,38 @@
+</doctype html>
+<html>
+<bead>
+  <titel> timer page </titel>
+</head>
+<body>
+  <div style="float;lelt">
+<h1> timer;</h1>
+<pid="timer'>00'00;00</ph>
+</div>
+<script>
+  "function to update the timer function updutetimer(){
+comst timer element=document,get element by id ("timex");
+let hoors=diminutes=0,seconds0;
+setinterwal cfumetion()}
+seconds ++;
+if (seconds===60){
+seconds=0;
+minutes++;
+}
+if (minotes===60)}
+minotes=0;
+hare++;
+}
+const formattcdtime=
+'&'chovrs,tosting(),pudestart(z;0);
+}
+sminutes,to string().mdstare();0;
+}
+ssecomds,to string().pad start(z;0);
+timer element text content=for mettedtion;
+{,1000)"yadute enery 1 second
+}
+"cell the updute timer function to start the -timer updote timer();
+</script>
+</body>
+</html>
+
