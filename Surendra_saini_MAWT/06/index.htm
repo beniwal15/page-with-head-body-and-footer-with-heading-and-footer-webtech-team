@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student details</title>
+</head>
+<body>
+    <h1>Student Details</h1>
+    <form id="studentForm">
+        <label for="studentNumber"> Student Number:</label>
+        <!-- repeat similar lines for Name, Age, and input fields -->
+        <button type="button" onclick="addStudent()">Add student</button>
+    </form>
+    <h2>Student List: </h2>
+    <ul id="studentList"></ul>
+    <script>
+        let students=[];
+        function addStudent(){
+            const studentName = document.getElementById('student Number').value;
+            const student = {}
+            // 'student' object which has properties like 'studentNumber', 'studentAge', 'studentName' and 'studentMarks'
+            students.push(student);
+
+        }
+        function displayStudents(){
+            const studentList = document.getElementsById("studentList");
+            studentList.innerHTML = "";
+            const listItem = document.createElement('li');
+            listItem.innerHTML = "";
+
+            studentList.appendChild(listItem);
+        }
+        function resetForm(){
+            // enter the reset code here
+        }
+    </script>
+    
+
+</body>
+</html>
