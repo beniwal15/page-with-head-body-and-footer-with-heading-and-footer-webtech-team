@@ -1,0 +1,25 @@
+<!DOCTYPE html>: This declaration defines the document type and version of HTML you're using (HTML5 in this case).
+
+<html>: The root element of an HTML document.
+
+<head>: Contains metadata about the document, such as the page title.
+
+<title>Book Information</title>: Sets the title of the web page that appears in the browser's title bar or tab.
+
+<h1>: Defines a top-level heading with the text "Welcome to the Book Information Website."
+
+<ul>: Creates an unordered (bulleted) list.
+
+<li>: Represents list items within the unordered list.
+
+<a href="book1.html">Book 1</a>: Creates a hyperlink (<a>) with the text "Book 1" that links to book1.html. This is repeated for each book, creating clickable links to individual book pages.
+
+</body>: Marks the end of the document's body content.
+
+</html>: Closes the HTML document.
+
+<h1>: Displays the book's title.
+
+<p>: Represents paragraphs for book information, including author, published year, and a description. Replace the placeholder values with actual book details.
+
+<a href="index.html">: Creates a hyperlink with the text "Back to Homepage" that links back to the homepage (index.html).
