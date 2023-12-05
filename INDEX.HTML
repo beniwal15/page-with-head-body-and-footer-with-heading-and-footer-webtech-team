@@ -1,52 +1,87 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Simple Calculator</title>
-    <script>
-        function calculate() {
-            var num1 = parseFloat(document.getElementById("num1").value);
-            var num2 = parseFloat(document.getElementById("num2").value);
-            var operator = document.getElementById("operator").value;
-            var result;
-
-            switch (operator) {
-                case "+":
-                    result = num1 + num2;
-                    break;
-                case "-":
-                    result = num1 - num2;
-                    break;
-                case "*":
-                    result = num1 * num2;
-                    break;
-                case "/":
-                    if (num2 !== 0) {
-                        result = num1 / num2;
-                    } else {
-                        result = "Cannot divide by zero";
-                    }
-                    break;
-                default:
-                    result = "Invalid operator";
-            }
-
-            document.getElementById("result").innerHTML = "Result: " + result;
-        }
-    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Details</title>
 </head>
 <body>
-    <h1>Simple Calculator</h1>
-    <form>
-        <input type="number" id="num1" placeholder="Enter number 1">
-        <select id="operator">
-            <option value="+">+</option>
-            <option value="-">-</option>
-            <option value="*">*</option>
-            <option value="/">/</option>
-        </select>
-        <input type="number" id="num2" placeholder="Enter number 2">
-        <button type="button" onclick="calculate()">Calculate</button>
+    <h1>Student Details</h1>
+    <!-- Student details form -->
+    <form id="studentForm">
+        <label for="studentNumber">Student Number:</label>
+        <input type="text" id="studentNumber" required><br><br>
+
+        <label for="studentName">Name:</label>
+        <input type="text" id="studentName" required><br><br>
+
+        <label for="studentAge">Age:</label>
+        <input type="number" id="studentAge" required><br><br>
+
+        <label for="studentMarks">Marks:</label>
+        <input type="number" id="studentMarks" required><br><br>
+
+        <!-- Button to add a student -->
+        <button type="button" onclick="addStudent()">Add Student</button>
     </form>
-    <p id="result">Result:</p>
+
+    <h2>Student List:</h2>
+    <!-- List to display student details -->
+    <ul id="studentList"></ul>
+
+    <script>
+        // Array to store student objects
+        let students = [];
+
+        // Function to add a student
+        function addStudent() {
+            // Get input values from the form
+            const studentNumber = document.getElementById("studentNumber").value;
+            const studentName = document.getElementById("studentName").value;
+            const studentAge = document.getElementById("studentAge").value;
+            const studentMarks = document.getElementById("studentMarks").value;
+
+            // Create a student object
+            const student = {
+                studentNumber,
+                studentName,
+                studentAge,
+                studentMarks
+            };
+
+            // Add the student object to the array
+            students.push(student);
+
+            // Display the updated list of students
+            displayStudents();
+
+            // Reset the form
+            resetForm();
+        }
+
+        // Function to display the list of students
+        function displayStudents() {
+            const studentList = document.getElementById("studentList");
+            studentList.innerHTML = "";
+
+            students.forEach((student, index) => {
+                // Create a list item for each student
+                const listItem = document.createElement("li");
+                listItem.innerHTML = `
+                    Student ${index + 1}:<br>
+                    Student Number: ${student.studentNumber}<br>
+                    Name: ${student.studentName}<br>
+                    Age: ${student.studentAge}<br>
+                    Marks: ${student.studentMarks}<br>
+                `;
+                studentList.appendChild(listItem);
+            });
+        }
+
+        // Function to reset the form
+        function resetForm() {
+            document.getElementById("studentForm").reset();
+        }
+    </script>
 </body>
 </html>
