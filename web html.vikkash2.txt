@@ -1,0 +1,86 @@
+Skip to content
+WTPROJECTS
+/
+page-with-head-body-and-footer-with-heading-and-footer-webtech-team
+
+Type / to search
+
+Code
+Issues
+Pull requests
+Actions
+Projects
+Wiki
+Security
+Insights
+Commit
+aanand cyber security
+ main
+@Anandkayath
+Anandkayath committed last week 
+1 parent ab2a8b3
+commit 66a2355
+Showing 1 changed file with 43 additions and 0 deletions.
+ 43 changes: 43 additions & 0 deletions43  
+ex product inforamtion.html
+@@ -0,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Product inforamtion </title>
+</head>
+<body>
+	<h1>Product informtion </h1>
+	<table border ="1">
+		<tr>
+			<th> Name </th>
+			<th> Brand  </th>
+			<th> Price </th>
+			<th> stock </th>
+		</tr>
+		<tr>
+			<td>product</td>
+			<td>Brand</td>
+			<td> $19.99</td>
+			<td> 50 </tr>
+		</tr>
+		<tr>
+			<td>Product </td>
+			<td>Brand </td>
+			<td>$29.99</td>
+			<td>30</td>			
+		</tr>
+	</table>
+	<table> border = "1",align="left">
+		<tr>
+			<th>Company</th>
+			<th>Model</th>
+			<th>Price</th>
+		</tr>
+		<tr>
+			<a href = " # ">
+				<td> Apple </td>
+				<td> iphone </td>
+				<td> 59999 </td>
+			</a>
+			</tr>
+			</table>
+	</body>
+	</html>
+0 comments on commit 66a2355
+@vikasjangid143
+Comment
+ 
+Leave a comment
+ 
+ You’re not receiving notifications from this thread.
+Footer
+© 2023 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
+Security
+Status
+Docs
+Contact
+aanand cyber security · WTPROJECTS/page-with-head-body-and-footer-with-heading-and-footer-webtech-team@66a2355
