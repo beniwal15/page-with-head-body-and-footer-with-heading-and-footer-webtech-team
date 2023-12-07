@@ -1,87 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Details</title>
+    <title>Timer Page</title>
 </head>
 <body>
-    <h1>Student Details</h1>
-    <!-- Student details form -->
-    <form id="studentForm">
-        <label for="studentNumber">Student Number:</label>
-        <input type="text" id="studentNumber" required><br><br>
-
-        <label for="studentName">Name:</label>
-        <input type="text" id="studentName" required><br><br>
-
-        <label for="studentAge">Age:</label>
-        <input type="number" id="studentAge" required><br><br>
-
-        <label for="studentMarks">Marks:</label>
-        <input type="number" id="studentMarks" required><br><br>
-
-        <!-- Button to add a student -->
-        <button type="button" onclick="addStudent()">Add Student</button>
-    </form>
-
-    <h2>Student List:</h2>
-    <!-- List to display student details -->
-    <ul id="studentList"></ul>
+    <div style="float: left;">
+        <h1>Timer:</h1>
+        <p id="timer">00:00:00</p>
+    </div>
 
     <script>
-        // Array to store student objects
-        let students = [];
+        // Function to update the timer
+        function updateTimer() {
+            const timerElement = document.getElementById("timer");
+            let hours = 0, minutes = 0, seconds = 0;
 
-        // Function to add a student
-        function addStudent() {
-            // Get input values from the form
-            const studentNumber = document.getElementById("studentNumber").value;
-            const studentName = document.getElementById("studentName").value;
-            const studentAge = document.getElementById("studentAge").value;
-            const studentMarks = document.getElementById("studentMarks").value;
+            setInterval(function() {
+                seconds++;
 
-            // Create a student object
-            const student = {
-                studentNumber,
-                studentName,
-                studentAge,
-                studentMarks
-            };
+                if (seconds === 60) {
+                    seconds = 0;
+                    minutes++;
+                }
 
-            // Add the student object to the array
-            students.push(student);
+                if (minutes === 60) {
+                    minutes = 0;
+                    hours++;
+                }
 
-            // Display the updated list of students
-            displayStudents();
+                const formattedTime = 
+                    `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
 
-            // Reset the form
-            resetForm();
+                timerElement.textContent = formattedTime;
+            }, 1000); // Update every 1 second
         }
 
-        // Function to display the list of students
-        function displayStudents() {
-            const studentList = document.getElementById("studentList");
-            studentList.innerHTML = "";
-
-            students.forEach((student, index) => {
-                // Create a list item for each student
-                const listItem = document.createElement("li");
-                listItem.innerHTML = `
-                    Student ${index + 1}:<br>
-                    Student Number: ${student.studentNumber}<br>
-                    Name: ${student.studentName}<br>
-                    Age: ${student.studentAge}<br>
-                    Marks: ${student.studentMarks}<br>
-                `;
-                studentList.appendChild(listItem);
-            });
-        }
-
-        // Function to reset the form
-        function resetForm() {
-            document.getElementById("studentForm").reset();
-        }
+        // Call the updateTimer function to start the timer
+        updateTimer();
     </script>
 </body>
 </html>
