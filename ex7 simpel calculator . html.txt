@@ -1,0 +1,45 @@
+ <!DOCTYPE html>
+<html>
+<head>
+<title> simple cakulator </title> 
+
+<Scripts>
+
+function calutak () &
+ var nom 1=
+
+Passe parsefloat(document.getElement Byld ("num").value';
+
+var num2 = parse float (document.get Element Byle ell numally valuess var operator = document.getElementByld ("operator") value: var resut;
+
+Swith Coperator) & case "t":
+resulf numit num2: breaki
+reso it - nommi- num2;
+breaks case = "";
+result = nomm 1* num2;
+break;
+case 11/":
+ if (num21==0) { resolt = num4/num2;
+result=" canmt divide by zero";
+break's defalf result = " invalid operator";
+document, get ElementById( 1"result").inner HTAAL =" Result: "+ result;
+<script>
+</head>
+<body>
+<h1>Simple calculator </h4>
+<form>
+<input type="summber" id=" num1" placeholder = "Enter
+number 1"> <select id=" operatorlly
+<option value="+">+ <loption>
+<option value="4">-</option>
+<option value="x">*</option>
+<option valul = "/"><option>
+< Iselect>
+<input type= "number"
+ id=" numg" placeholder "y="Enter numbers)
+•button type < "button">
+onclick =ll calculate()"> calculatel buttons
+</form>
+<p id result's > Result: </p>
+</body>
+</head>
