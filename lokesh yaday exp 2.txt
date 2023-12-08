@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Information</title>
+</head>
+<body>
+    <h1>Welcome to the Book Information WebSite</h1>
+    <img src="download book.jfif" alt="">
+    <img src="download (1) book.jfif" alt="">
+    <img src="download (2) book.jfif" alt="">
+    <ul>
+        <li><a href="https://storage.googleapis.com/shy-pub/263980/deled-book-e-pedagogy-of-social-science-education-1675176902180_SKU-1337_0.jpg">Pedagogy of the oppresed frefire</a></li>
+        <li><a href="https://i.thenile.io/r1000/9780061233845.jpg?r=5f5c0b15edb84">the Alchemist by paulo</a></li>
+        <li><a href="https://i.thenile.io/r1000/9780099273936.jpg?r=60453c0e0b52d">Beloved by tahi marison</a></li>
+    </ul>
+</body>
+</html>
