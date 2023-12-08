@@ -1,0 +1,43 @@
+<DOCTYPE html>
+<html>
+<head>
+  <title>Product Information</title>
+</head>
+ <body>
+ <h1>Product Informaton</h1>
+<table border = "1">
+<tr>
+   <th>Name</th>
+  <th>Brand</th>
+  <th>Price</th>
+  <th>Stock</th>
+</tr>
+<tr>
+   <td>Product1</td>
+  <td>Brand A</td>
+  <td>$19.99</td>
+  <td>50</td>
+</tr>
+<tr>
+   <td>product2</td>
+  <td>Brand B</td>
+  <td>$29.99</td>
+  <td>30</td>
+</tr>
+<--Add more rows for a additional products-->
+</table>
+<table border="1",align="center">
+
+<tr>
+   <th>Company</th>
+   <th>Model</th>
+   <th>Price</th>
+</tr>
+<a href="#">
+<td>Apple</td>
+<td>I Phone14</td>
+<td>80000</td>
+</a>
+</tr>
+</table>
+</html>
